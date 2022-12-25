@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="scripts/scripts.js" type="module"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Devil's Burger - Unholy Goodness</title>
+  </head>
+  <body>
+    <!-- header website -->
+    <header>
+      <!-- navbar -->
+      <nav class="navbar_wrapper">
+        <div class="navbar_content">
+          <!-- logo  -->
+          <span class="navbar_logo">
+            <i class="fa-solid fa-burger"></i>
+            Devil's Burger
+          </span>
+
+          <!-- web navigation list -->
+          <ul class="navbar_list">
+            <li>
+              <a class="link" href="#home">Home</a>
+            </li>
+            <li>
+              <a class="link" href="#about">About</a>
+            </li>
+            <li>
+              <a class="link" href="#menu">Menu</a>
+            </li>
+            <li>
+              <a class="link" href="#buy">Buy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- jumbotron -->
+      <div id="home" class="jumbotron_wrapper">
+        <div class="jumbotron_content">
+          <div class="jumbotron_welcome">
+            <h1 class="jumbotron_title">Unholy Goodness</h1>
+            <span class="jumbotron_subtitle"
+              >Freshly Made In The Kitchens Of Hell</span
+            >
+            <button class="btn jumbotron_btn">
+              <a href="#about" class="link">See Menu</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main content website-->
+    <main class="content">
+      <!-- about -->
+      <article id="about">
+        <div class="site-section">
+          <!-- left -->
+          <div class="site-section_detail">
+            <h2 class="site-section_header">About The Devil's Burger</h2>
+            <p class="site-section_paragraph">
+              Devil's Burger Joint is a restaurant that serves up delicious
+              burgers with a devilish twist. Our menu features a variety of
+              spicy and savory burgers made with high-quality, juicy meat and
+              topped with unique ingredients like ghost pepper sauce and devil's
+              claws (deep-fried jalapenos). Whether you're in the mood for a
+              classic cheeseburger or something more adventurous, we've got you
+              covered. Plus, our fiery decor and devilishly good drink specials
+              make for a memorable dining experience. Come on down and give us a
+              try - if you dare!
+            </p>
+            <p class="site-section_paragraph">
+              In addition to burgers, we also offer a selection of sides and
+              drinks to complement your meal. Our sides include classic options
+              like fries and onion rings, as well as more unique offerings like
+              deep-fried pickles and jalapeno poppers. As for drinks, we've got
+              a range of beers, cocktails, and sodas to choose from - all
+              designed to pair perfectly with our burgers. So whether you're in
+              the mood for a cold brew or a spicy cocktail, we've got you
+              covered.
+            </p>
+          </div>
+
+          <!-- right -->
+          <figure class="site-section_figure">
+            <img src="images/about.jpg" alt="restaurant" />
+            <figcaption>Our Restaurant</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <!-- menu -->
+      <article id="menu">
+        <div class="site-section">
+          <h2 class="site-section_header">The Devil's Picks</h2>
+        </div>
+      </article>
+
+      <!-- buy -->
+      <article id="buy">
+        <div class="site-section">
+          <h2 class="site-section_header">Buy Now !</h2>
+
+          <form class="site-section_form">
+            <div>
+              <label for="your_name">Your Name</label>
+              <input type="text" name="your_name" />
+            </div>
+
+            <div>
+              <label for="your_address">Your Address</label>
+              <input type="text" name="your_address" />
+            </div>
+
+            <div>
+              <label for="your_tel">Your Telephone Number</label>
+              <input type="tel" name="your_tel" />
+            </div>
+
+            <div>
+              <label for="orders">Your Orders</label>
+              <textarea name="orders" rows="10"></textarea>
+            </div>
+
+            <div class="btn-group">
+              <button type="submit" class="btn">Buy</button>
+              <button type="reset" class="btn">reset</button>
+            </div>
+          </form>
+        </div>
+      </article>
+
+      <!-- my profile -->
+      <aside class="profile"></aside>
+    </main>
+
+    <!-- footer website -->
+    <footer></footer>
+  </body>
+</html>
