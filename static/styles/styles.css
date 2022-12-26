@@ -1,0 +1,675 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root,
+::after,
+::before {
+  /*  colors */
+  --color-main: rgb(250 250 250);
+  --color-secondary: rgb(228 228 231);
+  --color-tertiary: rgb(161 161 170);
+  --color-darkest: rgb(24 24 27);
+  --color-darkest-half: rgba(63, 63, 70, 0.5);
+  --color-darker: rgb(39 39 42);
+  --color-darker-half: rgba(39, 39, 42, 0.5);
+  --color-dark: rgb(63 63 70);
+  --color-semidark: rgb(82 82 91);
+
+  /* highlights */
+  --highlight-yellow: rgb(251 191 36);
+  --highlight-orange: rgb(245 158 11);
+  --highlight-red: rgb(220 38 38);
+
+  /* padding */
+  --padding-outer: 2rem;
+
+  /* large screen size limitter */
+  --max-width: 1366px;
+
+  /* font */
+  --font-pt-serif: "PT Serif", serif;
+}
+
+/* REMOVE BROWSER DEFAULT CODE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--font-pt-serif);
+}
+
+/* REMOVE BROWSER DEFAULT CODE */
+
+/* OTHERS */
+
+.btn {
+  border: 2px solid var(--color-secondary);
+  border-radius: 2rem;
+  background-color: transparent;
+  color: var(--color-main);
+  transition: transform 200ms ease-out, color 200ms ease-in-out,
+    background-color 200ms ease-in-out, border-color 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.btn-submit {
+  background-color: var(--highlight-yellow);
+  border-color: var(--highlight-yellow);
+  padding: 0.5rem 1.5rem;
+  color: var(--color-darkest);
+  font-size: larger;
+  font-weight: bold;
+}
+
+.btn-submit-sm {
+  background-color: var(--highlight-yellow);
+  border-color: var(--highlight-yellow);
+  padding: 0.5rem 1rem;
+  color: var(--color-darkest);
+  font-weight: bold;
+}
+
+.btn-reset {
+  background-color: var(--highlight-red);
+  border-color: var(--highlight-red);
+  padding: 0.5rem 1.5rem;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.btn-cancel {
+  padding: 0.3rem;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+}
+
+.btn-cancel:hover {
+  background-color: var(--highlight-red);
+  border-color: var(--highlight-red);
+}
+/* END OF OTHERS */
+
+/* NAVBAR CODE */
+.navbar-wrapper {
+  background-color: var(--color-darker-half);
+  backdrop-filter: blur(8px);
+  position: fixed;
+  inset-inline: 0;
+  z-index: 90;
+}
+
+.navbar-content {
+  margin-inline: auto;
+  max-width: var(--max-width);
+  padding: 1rem var(--padding-outer);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  font-size: 2rem;
+  color: var(--highlight-orange);
+}
+
+.navbar-list {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.link {
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: var(--color-tertiary);
+  transition: color 100ms ease-in-out;
+}
+
+.link:hover {
+  cursor: pointer;
+  color: var(--color-secondary);
+}
+/* END OF NAVBAR CODE */
+
+/* JUMBOTRON CODE */
+.jumbotron-wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
+    url("../images/jumbotron.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.jumbotron-content {
+  margin-inline: auto;
+  max-width: var(--max-width);
+  display: flex;
+  align-items: center;
+  padding-inline: var(--padding-outer);
+  height: 800px;
+}
+
+.jumbotron-wrapper::after {
+  position: absolute;
+  content: "";
+  inset: 80% 0 0 0;
+  background: linear-gradient(transparent, var(--color-darkest));
+}
+
+.jumbotron-welcome {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 45%;
+  font-weight: 700;
+}
+
+.jumbotron-title {
+  font-size: 5rem;
+  color: var(--highlight-red);
+}
+
+.jumbotron-subtitle {
+  font-size: 1.5rem;
+  color: var(--color-secondary);
+}
+
+.jumbotron-btn a {
+  font-size: 1.2rem;
+  color: var(--color-main);
+  display: block;
+  padding: 1rem 1.5rem;
+}
+
+.jumbotron-btn a:hover {
+  color: var(--color-main);
+}
+
+.jumbotron-btn:hover {
+  background-color: var(--highlight-yellow);
+  border-color: var(--highlight-yellow);
+  color: var(--color-darkest);
+}
+/* END OF JUMBOTRON CODE */
+
+/* MAIN WRAPPER CODE */
+.content {
+  background-color: var(--color-darkest);
+}
+/* END OF MAIN WRAPPER CODE */
+
+/* SITE SECTION CODE */
+.site-section {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--padding-outer);
+  padding-block: 5rem;
+}
+
+.site-section-header {
+  color: var(--highlight-yellow);
+  position: relative;
+  font-size: 2.5rem;
+  text-decoration: overline;
+}
+
+.site-section-paragraph {
+  font-size: 1.2rem;
+  color: var(--color-secondary);
+}
+/* END OF SITE SECTION CODE */
+
+/* SITE SECTION ABOUT CODE */
+#about .site-section {
+  text-align: start;
+  display: flex;
+  gap: 3rem;
+}
+
+#about .site-section-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-basis: 50%;
+}
+
+#about .site-section-detail .site-section-paragraph {
+  text-align: justify;
+}
+
+#about .site-section-figure {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+#about .site-section-figure img {
+  width: 100%;
+  border-radius: 2rem;
+}
+
+#about .site-section-figure figcaption {
+  font-size: small;
+  font-weight: 700;
+  color: var(--color-tertiary);
+  text-align: right;
+}
+/* END SITE SECTION ABOUT CODE */
+
+/* SITE SECTION MENU CODE */
+#menu {
+  text-align: end;
+}
+
+#menu .menu-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#menu .picks {
+  display: flex;
+  height: 30rem;
+  margin-top: 2rem;
+  gap: 1rem;
+  text-align: start;
+}
+
+#menu .picks-item {
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+  border-radius: 1rem;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  flex-grow: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+    url("../images/burger-menus/onion-burger.jpg");
+}
+
+#menu .picks-item-sm {
+  padding: 1rem;
+}
+
+#menu .picks-runner-ups {
+  flex-basis: 45%;
+  display: flex;
+  gap: 1.2rem;
+  flex-direction: column;
+}
+
+.picks-item-title {
+  font-size: xx-large;
+  color: var(--highlight-orange);
+  font-weight: 700;
+}
+
+.picks-item-desc {
+  color: var(--color-tertiary);
+}
+
+.picks-item-price {
+  font-weight: 700;
+  font-size: xx-large;
+  color: var(--color-main);
+}
+
+.picks-item-sm .picks-item-title {
+  font-size: large;
+  color: var(--highlight-orange);
+  font-weight: 700;
+}
+
+.picks-item-sm .picks-item-desc {
+  font-size: smaller;
+  color: var(--color-tertiary);
+}
+
+.picks-item-sm .picks-item-price {
+  font-weight: 700;
+  font-size: large;
+  color: var(--color-main);
+}
+
+.menu-list-wrapper {
+  position: relative;
+}
+
+.menu-prev-btn,
+.menu-next-btn {
+  position: absolute;
+  height: 3.5rem;
+  width: 3.5rem;
+  font-size: larger;
+  transform: translateY(-50%);
+  top: 50%;
+  z-index: 10;
+}
+
+.menu-prev-btn {
+  left: 0%;
+}
+
+.menu-next-btn {
+  right: 0%;
+}
+
+.menu-list-wrapper::before {
+  content: "";
+  position: absolute;
+  inset-block: 0;
+  inset-inline: 0 90%;
+  background: linear-gradient(270deg, transparent, rgba(0, 0, 0, 0.65));
+}
+
+.menu-list-wrapper::after {
+  content: "";
+  position: absolute;
+  inset-block: 0;
+  inset-inline: 90% 0;
+  background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.65));
+}
+
+.menu-list {
+  display: flex;
+  overflow: hidden;
+  gap: 1rem;
+}
+
+.menu-card {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url("../images/burger-menus/onion-burger.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: start;
+  gap: 1.2rem;
+  padding: 1rem;
+  background-color: var(--color-dark);
+  border-radius: 1rem;
+  overflow: clip;
+  width: 20rem;
+  height: 25rem;
+}
+
+.menu-card-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.menu-card-title {
+  font-weight: 700;
+  font-size: larger;
+  color: var(--highlight-orange);
+}
+
+.menu-card-desc {
+  font-weight: 700;
+  font-size: smaller;
+  color: var(--color-tertiary);
+}
+
+.menu-card-price {
+  color: var(--color-main);
+  font-size: x-large;
+}
+
+/* END OF SITE SECTION MENU CODE */
+
+/* SITE SECTION BUY CODE */
+#buy {
+  background: url("../images/pattern\ \(2\).png");
+  text-align: center;
+  position: relative;
+}
+
+#buy::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#buy .site-section-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  z-index: 10;
+}
+
+#buy .form-label {
+  color: var(--color-tertiary);
+  text-align: start;
+  padding-bottom: 0.3rem;
+}
+
+#buy .site-section-form input,
+#buy .site-section-form textarea {
+  border-width: 0px;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  background-color: var(--color-darker);
+  color: var(--color-secondary);
+  transition: background-color 200ms ease-in-out;
+  border-radius: 1rem;
+}
+
+#buy .site-section-form input:focus,
+#buy .site-section-form textarea:focus {
+  outline: none;
+  background-color: var(--color-dark);
+}
+
+#buy .site-section-header {
+  position: relative;
+  z-index: 10;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.form-footer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-btn-group {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* END OF SITE SECTION BUY CODE */
+
+/* ORDERS CODE */
+.orders {
+  flex-basis: 65%;
+  text-align: start;
+}
+
+.orders-label {
+  color: var(--color-secondary);
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+.orders-list {
+  margin-top: 0.5rem;
+  background-color: var(--color-darker);
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 20rem;
+  overflow-y: auto;
+}
+
+.orders-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--color-dark);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.orders-img {
+  height: 4.5rem;
+  width: 4.5rem;
+  object-fit: cover;
+  border-radius: 0.25rem;
+  box-shadow: 1px 1px 6px 1px var(--color-darker-half);
+}
+
+.orders-detail {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 8;
+  align-items: flex-start;
+}
+
+.orders-name {
+  color: var(--color-secondary);
+  font-weight: 700;
+  font-size: x-large;
+}
+
+.orders-price {
+  font-size: larger;
+  color: var(--color-tertiary);
+}
+
+/* END OF ORDERS CODE */
+
+/* FOOTER CODE */
+.footer-wrapper {
+  background-color: var(--color-darker);
+}
+
+.footer-content {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding: 4rem var(--padding-outer);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.footer-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-item-title {
+  margin-bottom: 1.5rem;
+  font-size: x-large;
+  font-weight: 700;
+  color: var(--color-main);
+}
+
+.footer-navlist {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-navlist .link {
+  padding: 0.2rem 0rem;
+  width: 50%;
+  display: inline-block;
+}
+
+.footer-address h3 {
+  color: var(--color-secondary);
+}
+
+.footer-address div {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-tertiary);
+}
+
+.footer-footer {
+  color: var(--color-tertiary);
+  text-align: center;
+}
+
+.footer-map {
+  border-radius: 1rem;
+  border: 0;
+}
+
+/* END OF FOOTER CODE */
+
+/* PROFILE CODE */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-start-end-radius: 1rem;
+  border-end-end-radius: 1rem;
+  z-index: 30;
+  position: fixed;
+  background-color: var(--color-dark);
+  color: var(--color-secondary);
+  top: 50%;
+  padding: 1.8rem;
+  translate: -95% -50%;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile-detail-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.profile-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profile-detail span {
+  align-self: flex-start;
+}
+
+.profile-detail-wrapper .btn {
+  position: absolute;
+  right: -3.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: large;
+  top: 50%;
+  translate: 0 -50%;
+}
+
+/* END OF PROFILE CODE */

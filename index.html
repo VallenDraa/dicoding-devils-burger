@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="scripts/scripts.js" type="module"></script>
+    <script defer src="static/scripts/scripts.js" type="module"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -12,23 +12,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="static/styles/styles.css" />
     <title>Devil's Burger - Unholy Goodness</title>
   </head>
   <body>
     <!-- header website -->
     <header>
       <!-- navbar -->
-      <nav class="navbar_wrapper">
-        <div class="navbar_content">
+      <nav class="navbar-wrapper">
+        <div class="navbar-content">
           <!-- logo  -->
-          <span class="navbar_logo">
+          <span class="navbar-logo">
             <i class="fa-solid fa-burger"></i>
             Devil's Burger
           </span>
 
           <!-- web navigation list -->
-          <ul class="navbar_list">
+          <ul class="navbar-list">
             <li>
               <a class="link" href="#home">Home</a>
             </li>
@@ -46,15 +46,15 @@
       </nav>
 
       <!-- jumbotron -->
-      <div id="home" class="jumbotron_wrapper">
-        <div class="jumbotron_content">
-          <div class="jumbotron_welcome">
-            <h1 class="jumbotron_title">Unholy Goodness</h1>
-            <span class="jumbotron_subtitle"
+      <div id="home" class="jumbotron-wrapper">
+        <div class="jumbotron-content">
+          <div class="jumbotron-welcome">
+            <h1 class="jumbotron-title">Unholy Goodness</h1>
+            <span class="jumbotron-subtitle"
               >Freshly Made In The Kitchens Of Hell</span
             >
-            <button class="btn jumbotron_btn">
-              <a href="#about" class="link">See Menu</a>
+            <button class="btn jumbotron-btn">
+              <a href="#menu" class="link">See Menu</a>
             </button>
           </div>
         </div>
@@ -67,9 +67,9 @@
       <article id="about">
         <div class="site-section">
           <!-- left -->
-          <div class="site-section_detail">
-            <h2 class="site-section_header">About The Devil's Burger</h2>
-            <p class="site-section_paragraph">
+          <div class="site-section-detail">
+            <h2 class="site-section-header">About The Devil's Burger</h2>
+            <p class="site-section-paragraph">
               Devil's Burger Joint is a restaurant that serves up delicious
               burgers with a devilish twist. Our menu features a variety of
               spicy and savory burgers made with high-quality, juicy meat and
@@ -80,7 +80,7 @@
               make for a memorable dining experience. Come on down and give us a
               try - if you dare!
             </p>
-            <p class="site-section_paragraph">
+            <p class="site-section-paragraph">
               In addition to burgers, we also offer a selection of sides and
               drinks to complement your meal. Our sides include classic options
               like fries and onion rings, as well as more unique offerings like
@@ -93,9 +93,9 @@
           </div>
 
           <!-- right -->
-          <figure class="site-section_figure">
-            <img src="images/about.jpg" alt="restaurant" />
-            <figcaption>Our Restaurant</figcaption>
+          <figure class="site-section-figure">
+            <img src="static/images/about.jpg" alt="restaurant" />
+            <figcaption>*Fatmawati Joint</figcaption>
           </figure>
         </div>
       </article>
@@ -103,49 +103,308 @@
       <!-- menu -->
       <article id="menu">
         <div class="site-section">
-          <h2 class="site-section_header">The Devil's Picks</h2>
+          <h2 class="site-section-header">Our Poisons</h2>
+          <div class="menu-content">
+            <!-- Top Picks-->
+            <header class="picks">
+              <div class="picks-item">
+                <h3 class="picks-item-title">Italian Burger</h3>
+                <p class="picks-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  eligendi quasi tenetur deserunt explicabo perferendis enim,
+                  atque voluptatibus doloribus ab.
+                </p>
+                <span class="picks-item-price">$9.99</span>
+                <button class="btn btn-submit-sm">Add To Orders</button>
+              </div>
+              <aside class="picks-runner-ups">
+                <!-- top -->
+                <div class="picks-item picks-item-sm">
+                  <h3 class="picks-item-title">American Burger</h3>
+                  <p class="picks-item-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Animi deserunt quis, totam modi eos eaque consequatur
+                    consectetur blanditiis quisquam ipsum.
+                  </p>
+                  <span class="picks-item-price">$10.99</span>
+                  <button class="btn btn-submit-sm">Add To Orders</button>
+                </div>
+
+                <!-- bottom -->
+                <div class="picks-item picks-item-sm">
+                  <h3 class="picks-item-title">Salad Burger</h3>
+                  <p class="picks-item-desc">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Temporibus, illum!
+                  </p>
+                  <span class="picks-item-price">$5.99</span>
+                  <button class="btn btn-submit-sm">Add To Orders</button>
+                </div>
+              </aside>
+            </header>
+
+            <!-- other menu -->
+            <footer class="menu-list-wrapper">
+              <!-- left button -->
+              <button class="btn btn-cancel menu-prev-btn">
+                <i class="fa-solid fa-angle-left"></i>
+              </button>
+
+              <ul class="menu-list">
+                <li class="menu-list-item">
+                  <figure class="menu-card">
+                    <figcaption class="menu-card-detail">
+                      <h3 class="menu-card-title">Chilli Burger</h3>
+                      <p class="menu-card-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Minus, laborum.
+                      </p>
+                      <span class="menu-card-price">$9.9</span>
+                    </figcaption>
+                    <button class="btn btn-submit">Add To Orders</button>
+                  </figure>
+                </li>
+                <li class="menu-list-item">
+                  <figure class="menu-card">
+                    <figcaption class="menu-card-detail">
+                      <h3 class="menu-card-title">Chilli Burger</h3>
+                      <p class="menu-card-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Minus, laborum.
+                      </p>
+                      <span class="menu-card-price">$9.9</span>
+                    </figcaption>
+                    <button class="btn btn-submit">Add To Orders</button>
+                  </figure>
+                </li>
+                <li class="menu-list-item">
+                  <figure class="menu-card">
+                    <figcaption class="menu-card-detail">
+                      <h3 class="menu-card-title">Chilli Burger</h3>
+                      <p class="menu-card-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Minus, laborum.
+                      </p>
+                      <span class="menu-card-price">$9.9</span>
+                    </figcaption>
+                    <button class="btn btn-submit">Add To Orders</button>
+                  </figure>
+                </li>
+                <li class="menu-list-item">
+                  <figure class="menu-card">
+                    <figcaption class="menu-card-detail">
+                      <h3 class="menu-card-title">Chilli Burger</h3>
+                      <p class="menu-card-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Minus, laborum.
+                      </p>
+                      <span class="menu-card-price">$9.9</span>
+                    </figcaption>
+                    <button class="btn btn-submit">Add To Orders</button>
+                  </figure>
+                </li>
+                <li class="menu-list-item">
+                  <figure class="menu-card">
+                    <figcaption class="menu-card-detail">
+                      <h3 class="menu-card-title">Chilli Burger</h3>
+                      <p class="menu-card-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Minus, laborum.
+                      </p>
+                      <span class="menu-card-price">$9.9</span>
+                    </figcaption>
+                    <button class="btn btn-submit">Add To Orders</button>
+                  </figure>
+                </li>
+                <li class="menu-list-item">
+                  <figure class="menu-card">
+                    <figcaption class="menu-card-detail">
+                      <h3 class="menu-card-title">Chilli Burger</h3>
+                      <p class="menu-card-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Minus, laborum.
+                      </p>
+                      <span class="menu-card-price">$9.9</span>
+                    </figcaption>
+                    <button class="btn btn-submit">Add To Orders</button>
+                  </figure>
+                </li>
+                <li class="menu-list-item">
+                  <figure class="menu-card">
+                    <figcaption class="menu-card-detail">
+                      <h3 class="menu-card-title">Chilli Burger</h3>
+                      <p class="menu-card-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Minus, laborum.
+                      </p>
+                      <span class="menu-card-price">$9.9</span>
+                    </figcaption>
+                    <button class="btn btn-submit">Add To Orders</button>
+                  </figure>
+                </li>
+              </ul>
+
+              <!-- right btn -->
+              <button class="btn btn-cancel menu-next-btn">
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </footer>
+          </div>
         </div>
       </article>
 
       <!-- buy -->
       <article id="buy">
         <div class="site-section">
-          <h2 class="site-section_header">Buy Now !</h2>
+          <h2 class="site-section-header">Buy Now !</h2>
 
-          <form class="site-section_form">
-            <div>
-              <label for="your_name">Your Name</label>
-              <input type="text" name="your_name" />
+          <form class="site-section-form">
+            <div class="form-input">
+              <label class="form-label" for="your-name">Your Name</label>
+              <input type="text" name="your-name" />
             </div>
 
-            <div>
-              <label for="your_address">Your Address</label>
-              <input type="text" name="your_address" />
+            <div class="form-input">
+              <label class="form-label" for="your-address">Your Address</label>
+              <input type="text" name="your-address" />
             </div>
 
-            <div>
-              <label for="your_tel">Your Telephone Number</label>
-              <input type="tel" name="your_tel" />
+            <div class="form-input">
+              <label class="form-label" for="your-tel"
+                >Your Telephone Number</label
+              >
+              <input type="tel" name="your-tel" />
             </div>
 
-            <div>
-              <label for="orders">Your Orders</label>
-              <textarea name="orders" rows="10"></textarea>
-            </div>
+            <div class="form-footer">
+              <div class="orders">
+                <span class="orders-label">Your Orders</span>
+                <ul class="orders-list">
+                  <li class="orders-item">
+                    <img
+                      src="static/images/burger-menus/smash-burger.jpg"
+                      alt="smash-burger"
+                      class="orders-img"
+                    />
 
-            <div class="btn-group">
-              <button type="submit" class="btn">Buy</button>
-              <button type="reset" class="btn">reset</button>
+                    <div class="orders-detail">
+                      <!-- name -->
+                      <span class="orders-name">Smash Burger</span>
+                      <!-- price -->
+                      <span class="orders-price">$9.9</span>
+                    </div>
+
+                    <button type="button" class="btn btn-cancel">
+                      <i class="fa-solid fa-xmark"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="form-btn-group">
+                <button type="submit" class="btn btn-submit">Buy</button>
+                <button type="reset" class="btn btn-reset">Reset</button>
+              </div>
             </div>
           </form>
         </div>
       </article>
 
       <!-- my profile -->
-      <aside class="profile"></aside>
+      <aside class="profile">
+        <div class="profile-detail-wrapper">
+          <img
+            src="static/images/my-pic.jpg"
+            alt="Jestine Vallendra Dwi Putra"
+          />
+          <div class="profile-detail">
+            <span>Nama: Jestine Vallendra Dwi Putra</span>
+            <span>Email: vallenatwork@gmail.com</span>
+            <span
+              >Github:
+              <a
+                target="_blank"
+                href="https://github.com/VallenDraa"
+                class="link"
+                >VallenDraa</a
+              ></span
+            >
+          </div>
+          <button class="btn btn-cancel">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </aside>
     </main>
 
     <!-- footer website -->
-    <footer></footer>
+    <footer class="footer-wrapper">
+      <div class="footer-content">
+        <header class="footer-header">
+          <!-- menu -->
+          <div class="footer-item">
+            <h2 class="footer-item-title">Navigation</h2>
+            <nav class="footer-nav">
+              <!-- web navigation list -->
+              <ul class="footer-navlist">
+                <li>
+                  <a class="link" href="#home">Home</a>
+                </li>
+                <li>
+                  <a class="link" href="#about">About</a>
+                </li>
+                <li>
+                  <a class="link" href="#menu">Menu</a>
+                </li>
+                <li>
+                  <a class="link" href="#buy">Buy</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- address -->
+          <div class="footer-item">
+            <h2 class="footer-item-title">Address</h2>
+            <address class="footer-address">
+              <h3>Devil's Burger</h3>
+              <div>
+                <span>Jl. Fatmawati No 123</span>
+                <span>Jakarta - Indonesia</span>
+                <span>Post Code: 12345</span>
+                <span>
+                  Phone:
+                  <a class="link" href="tel:+62081234567811"
+                    >+62 0812-3456-7811</a
+                  >
+                </span>
+                <span>
+                  Email:
+                  <a class="link" href="mailto:info@devilsburger.com"
+                    >info@devilsburger.com</a
+                  >
+                </span>
+              </div>
+            </address>
+          </div>
+
+          <!-- map -->
+          <div class="footer-item">
+            <h2 class="footer-item-title">Our Location</h2>
+            <iframe
+              class="footer-map"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5639.253602612196!2d168.65857125134966!3d-45.03250089999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x80ea0223a75f95cc!2sDevil%20Burger!5e0!3m2!1sen!2sid!4v1672035646003!5m2!1sen!2sid"
+              width="400"
+              height="300"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </header>
+        <footer class="footer-footer">
+          <span>&copy;Copyright 2022 | Devil's Burger</span>
+        </footer>
+      </div>
+    </footer>
   </body>
 </html>
