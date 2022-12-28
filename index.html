@@ -13,32 +13,39 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="static/styles/styles.css" />
-    <title>Devil's Burger - Unholy Goodness</title>
+    <title>Devil's Burger | Unholy Goodness</title>
   </head>
   <body>
     <!-- header website -->
     <header>
       <!-- navbar -->
+      <!-- NAVBAR CUMA NGIKUTIN STYLE BOOTSTRAP SAJA BUKAN NYONTEK KODE  -->
       <nav class="navbar-wrapper">
         <div class="navbar-content">
-          <!-- logo  -->
-          <span class="navbar-logo">
-            <i class="fa-solid fa-burger"></i>
-            Devil's Burger
-          </span>
+          <!-- logo and  menu button -->
+          <div class="navbar-left-side">
+            <span class="navbar-logo">
+              <i class="fa-solid fa-burger"></i>
+              Devil's Burger
+            </span>
+
+            <button class="btn navbar-menu-toggle">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
 
           <!-- web navigation list -->
           <ul class="navbar-list">
-            <li>
+            <li class="navbar-list-item">
               <a class="link" href="#home">Home</a>
             </li>
-            <li>
+            <li class="navbar-list-item">
               <a class="link" href="#about">About</a>
             </li>
-            <li>
+            <li class="navbar-list-item">
               <a class="link" href="#menu">Menu</a>
             </li>
-            <li>
+            <li class="navbar-list-item">
               <a class="link" href="#buy">Buy</a>
             </li>
           </ul>
@@ -330,7 +337,7 @@
               ></span
             >
           </div>
-          <button class="btn btn-cancel">
+          <button class="btn btn-cancel btn-show-profile">
             <i class="fa-solid fa-angle-right"></i>
           </button>
         </div>
@@ -389,13 +396,11 @@
           </div>
 
           <!-- map -->
-          <div class="footer-item">
+          <div class="footer-item footer-map-wrapper">
             <h2 class="footer-item-title">Our Location</h2>
             <iframe
               class="footer-map"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5639.253602612196!2d168.65857125134966!3d-45.03250089999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x80ea0223a75f95cc!2sDevil%20Burger!5e0!3m2!1sen!2sid!4v1672035646003!5m2!1sen!2sid"
-              width="400"
-              height="300"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
@@ -406,5 +411,12 @@
         </footer>
       </div>
     </footer>
+
+    <!-- back to top button -->
+    <button class="btn btn-to-top">
+      <a href="#">
+        <i class="fa-solid fa-angle-up"></i>
+      </a>
+    </button>
   </body>
 </html>
