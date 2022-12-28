@@ -104,6 +104,14 @@
   transition: translate 300ms var(--ini-baru-keren);
 }
 
+.btn-to-top a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .btn-to-top:hover {
   background-color: var(--highlight-yellow);
 }
