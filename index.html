@@ -15,11 +15,16 @@
     <link rel="stylesheet" href="static/styles/styles.css" />
     <title>Devil's Burger | Unholy Goodness</title>
   </head>
-  <body>
+  <body style="overflow-y: hidden">
+    <!-- loading screen -->
+    <div class="loading-screen">
+      <i class="fa-solid fa-burger loading-screen-spinning-burger"></i>
+    </div>
+
     <!-- header website -->
     <header>
       <!-- navbar -->
-      <!-- NAVBAR CUMA NGIKUTIN STYLE BOOTSTRAP SAJA BUKAN NYONTEK KODE  -->
+      <!-- NAVBAR HANYA MENGIKUTI STYLE MILIK BOOTSTRAP SAJA, KODE MERUPAKAN IMPLEMENTASI MILIK SENDIRI  -->
       <nav class="navbar-wrapper">
         <div class="navbar-content">
           <!-- logo and  menu button -->
@@ -114,38 +119,36 @@
           <div class="menu-content">
             <!-- Top Picks-->
             <header class="picks">
-              <div class="picks-item">
-                <h3 class="picks-item-title">Italian Burger</h3>
-                <p class="picks-item-desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                  eligendi quasi tenetur deserunt explicabo perferendis enim,
-                  atque voluptatibus doloribus ab.
-                </p>
-                <span class="picks-item-price">$9.99</span>
-                <button class="btn btn-submit-sm">Add To Orders</button>
+              <!-- top pick -->
+              <div class="picks-item top-pick">
+                <h3 class="picks-item-title"></h3>
+                <p class="picks-item-desc"></p>
+                <span class="picks-item-price"></span>
+                <button class="btn btn-submit-sm btn-order">
+                  Add To Orders
+                </button>
               </div>
+
+              <!-- runner up -->
               <aside class="picks-runner-ups">
-                <!-- top -->
+                <!-- second -->
                 <div class="picks-item picks-item-sm">
-                  <h3 class="picks-item-title">American Burger</h3>
-                  <p class="picks-item-desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Animi deserunt quis, totam modi eos eaque consequatur
-                    consectetur blanditiis quisquam ipsum.
-                  </p>
-                  <span class="picks-item-price">$10.99</span>
-                  <button class="btn btn-submit-sm">Add To Orders</button>
+                  <h3 class="picks-item-title"></h3>
+                  <p class="picks-item-desc"></p>
+                  <span class="picks-item-price"></span>
+                  <button class="btn btn-submit-sm btn-order">
+                    Add To Orders
+                  </button>
                 </div>
 
-                <!-- bottom -->
+                <!-- third -->
                 <div class="picks-item picks-item-sm">
-                  <h3 class="picks-item-title">Salad Burger</h3>
-                  <p class="picks-item-desc">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Temporibus, illum!
-                  </p>
-                  <span class="picks-item-price">$5.99</span>
-                  <button class="btn btn-submit-sm">Add To Orders</button>
+                  <h3 class="picks-item-title"></h3>
+                  <p class="picks-item-desc"></p>
+                  <span class="picks-item-price"></span>
+                  <button class="btn btn-submit-sm btn-order">
+                    Add To Orders
+                  </button>
                 </div>
               </aside>
             </header>
@@ -157,99 +160,7 @@
                 <i class="fa-solid fa-angle-left"></i>
               </button>
 
-              <ul class="menu-list">
-                <li class="menu-list-item">
-                  <figure class="menu-card">
-                    <figcaption class="menu-card-detail">
-                      <h3 class="menu-card-title">Chilli Burger</h3>
-                      <p class="menu-card-desc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Minus, laborum.
-                      </p>
-                      <span class="menu-card-price">$9.9</span>
-                    </figcaption>
-                    <button class="btn btn-submit">Add To Orders</button>
-                  </figure>
-                </li>
-                <li class="menu-list-item">
-                  <figure class="menu-card">
-                    <figcaption class="menu-card-detail">
-                      <h3 class="menu-card-title">Chilli Burger</h3>
-                      <p class="menu-card-desc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Minus, laborum.
-                      </p>
-                      <span class="menu-card-price">$9.9</span>
-                    </figcaption>
-                    <button class="btn btn-submit">Add To Orders</button>
-                  </figure>
-                </li>
-                <li class="menu-list-item">
-                  <figure class="menu-card">
-                    <figcaption class="menu-card-detail">
-                      <h3 class="menu-card-title">Chilli Burger</h3>
-                      <p class="menu-card-desc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Minus, laborum.
-                      </p>
-                      <span class="menu-card-price">$9.9</span>
-                    </figcaption>
-                    <button class="btn btn-submit">Add To Orders</button>
-                  </figure>
-                </li>
-                <li class="menu-list-item">
-                  <figure class="menu-card">
-                    <figcaption class="menu-card-detail">
-                      <h3 class="menu-card-title">Chilli Burger</h3>
-                      <p class="menu-card-desc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Minus, laborum.
-                      </p>
-                      <span class="menu-card-price">$9.9</span>
-                    </figcaption>
-                    <button class="btn btn-submit">Add To Orders</button>
-                  </figure>
-                </li>
-                <li class="menu-list-item">
-                  <figure class="menu-card">
-                    <figcaption class="menu-card-detail">
-                      <h3 class="menu-card-title">Chilli Burger</h3>
-                      <p class="menu-card-desc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Minus, laborum.
-                      </p>
-                      <span class="menu-card-price">$9.9</span>
-                    </figcaption>
-                    <button class="btn btn-submit">Add To Orders</button>
-                  </figure>
-                </li>
-                <li class="menu-list-item">
-                  <figure class="menu-card">
-                    <figcaption class="menu-card-detail">
-                      <h3 class="menu-card-title">Chilli Burger</h3>
-                      <p class="menu-card-desc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Minus, laborum.
-                      </p>
-                      <span class="menu-card-price">$9.9</span>
-                    </figcaption>
-                    <button class="btn btn-submit">Add To Orders</button>
-                  </figure>
-                </li>
-                <li class="menu-list-item">
-                  <figure class="menu-card">
-                    <figcaption class="menu-card-detail">
-                      <h3 class="menu-card-title">Chilli Burger</h3>
-                      <p class="menu-card-desc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Minus, laborum.
-                      </p>
-                      <span class="menu-card-price">$9.9</span>
-                    </figcaption>
-                    <button class="btn btn-submit">Add To Orders</button>
-                  </figure>
-                </li>
-              </ul>
+              <ul class="menu-list"></ul>
 
               <!-- right btn -->
               <button class="btn btn-cancel menu-next-btn">
@@ -265,55 +176,16 @@
         <div class="site-section">
           <h2 class="site-section-header">Buy Now !</h2>
 
-          <form class="site-section-form">
-            <div class="form-input">
-              <label class="form-label" for="your-name">Your Name</label>
-              <input type="text" name="your-name" />
+          <div class="orders-wrapper">
+            <div class="orders">
+              <ul class="orders-list"></ul>
             </div>
 
-            <div class="form-input">
-              <label class="form-label" for="your-address">Your Address</label>
-              <input type="text" name="your-address" />
+            <div class="orders-btn-group">
+              <button type="submit" class="btn btn-submit">Buy</button>
+              <button type="reset" class="btn btn-reset">Reset</button>
             </div>
-
-            <div class="form-input">
-              <label class="form-label" for="your-tel"
-                >Your Telephone Number</label
-              >
-              <input type="tel" name="your-tel" />
-            </div>
-
-            <div class="form-footer">
-              <div class="orders">
-                <span class="orders-label">Your Orders</span>
-                <ul class="orders-list">
-                  <li class="orders-item">
-                    <img
-                      src="static/images/burger-menus/smash-burger.jpg"
-                      alt="smash-burger"
-                      class="orders-img"
-                    />
-
-                    <div class="orders-detail">
-                      <!-- name -->
-                      <span class="orders-name">Smash Burger</span>
-                      <!-- price -->
-                      <span class="orders-price">$9.9</span>
-                    </div>
-
-                    <button type="button" class="btn btn-cancel">
-                      <i class="fa-solid fa-xmark"></i>
-                    </button>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="form-btn-group">
-                <button type="submit" class="btn btn-submit">Buy</button>
-                <button type="reset" class="btn btn-reset">Reset</button>
-              </div>
-            </div>
-          </form>
+          </div>
         </div>
       </article>
 

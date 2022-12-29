@@ -3,85 +3,85 @@
     {
       "id": 1,
       "name": "Bison Burger",
-      "description": "A hearty burger made with ground bison meat.",
-      "image": "../images/burger-menus/bison-burger.jpg",
+      "description": "A hearty burger made with ground bison meat. Served on a bun with your choice of toppings.",
+      "image": "static/images/burger-menus/bison-burger.jpg",
       "price": 12.99
     },
     {
       "id": 2,
       "name": "Chicken Burger",
-      "description": "A classic burger made with grilled chicken breast.",
-      "image": "../images/burger-menus/chicken-burger.jpg",
+      "description": "A classic burger made with grilled chicken breast. Topped with sauce and veggies.",
+      "image": "static/images/burger-menus/chicken-burger.jpg",
       "price": 10.99
     },
     {
       "id": 3,
       "name": "Chilli Burger",
-      "description": "A spicy burger topped with chilli con carne.",
-      "image": "../images/burger-menus/chilli-burger.jpg",
+      "description": "A spicy burger topped with chilli con carne. Perfect for those who love heat.",
+      "image": "static/images/burger-menus/chilli-burger.jpg",
       "price": 11.99
     },
     {
       "id": 4,
       "name": "Corn Burger",
-      "description": "A vegan burger made with corn and beans.",
-      "image": "../images/burger-menus/corn-burger.jpg",
+      "description": "A vegan burger made with corn and beans. Served on a bun with your choice of toppings.",
+      "image": "static/images/burger-menus/corn-burger.jpg",
       "price": 9.99
     },
     {
       "id": 5,
       "name": "Double Cheese Burger",
-      "description": "A classic burger with two slices of cheese.",
-      "image": "../images/burger-menus/double-burger.jpg",
+      "description": "A classic burger with two slices of cheese. Served on a bun with your choice of toppings.",
+      "image": "static/images/burger-menus/double-burger.jpg",
       "price": 8.99
     },
     {
       "id": 6,
       "name": "Onion Burger",
-      "description": "A burger topped with caramelized onions.",
-      "image": "../images/burger-menus/onion-burger.jpg",
+      "description": "A burger topped with caramelized onions. Served on a bun with your choice of toppings.",
+      "image": "static/images/burger-menus/onion-burger.jpg",
       "price": 9.99
     },
     {
       "id": 7,
       "name": "Portabella Burger",
-      "description": "A vegetarian burger made with grilled portabella mushrooms.",
-      "image": "../images/burger-menus/portabella-burger.jpg",
+      "description": "A vegetarian burger made with grilled portabella mushrooms. Served on a bun with your choice of toppings.",
+      "image": "static/images/burger-menus/portabella-burger.jpg",
       "price": 10.99
     },
     {
       "id": 8,
       "name": "Smash Burger",
-      "description": "A burger made with a thin patty that is smashed on the grill.",
-      "image": "../images/burger-menus/smash-burger.jpg",
+      "description": "A burger made with a thin patty that is smashed on the grill. Served on a bun with your choice of toppings.",
+      "image": "static/images/burger-menus/smash-burger.jpg",
       "price": 8.99
     },
     {
       "id": 9,
       "name": "Teriyaki Burger",
-      "description": "A burger topped with teriyaki sauce and pineapple.",
-      "image": "../images/burger-menus/teriyaki-burger.jpg",
+      "description": "A burger topped with teriyaki sauce and pineapple. Served on a bun with your choice of toppings.",
+      "image": "static/images/burger-menus/teriyaki-burger.jpg",
       "price": 11.99
     },
     {
       "id": 10,
       "name": "Thai Burger",
-      "description": "A burger with a spicy Thai-inspired sauce.",
-      "image": "../images/burger-menus/thai-burger.jpg",
+      "description": "A burger with a spicy Thai-inspired sauce. Served on a bun with your choice of toppings.",
+      "image": "static/images/burger-menus/thai-burger.jpg",
       "price": 10.99
     },
     {
       "id": 11,
       "name": "Turkey Burger",
-      "description": "A lighter burger made with ground turkey meat.",
-      "image": "../images/burger-menus/turkey-burger.jpg",
+      "description": "A lighter burger made with ground turkey meat. Served on a bun with your choice of toppings.",
+      "image": "static/images/burger-menus/turkey-burger.jpg",
       "price": 9.99
     },
     {
       "id": 12,
       "name": "Veggie Burger",
-      "description": "A vegetarian burger made with a variety of vegetables.",
-      "image": "../images/burger-menus/veggie-burger.jpg",
+      "description": "A vegetarian burger made with a variety of vegetables. Served on a bun with your choice of toppings.",
+      "image": "static/images/burger-menus/veggie-burger.jpg",
       "price": 10.99
     }
   ]
