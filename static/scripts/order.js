@@ -54,6 +54,8 @@ function loadSavedOrder() {
     } else {
       selectedMenuIds.forEach((id) => ordersList.append(newOrder(id)));
     }
+  } else {
+    emptyOrders();
   }
 }
 
