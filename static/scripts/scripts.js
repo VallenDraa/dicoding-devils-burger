@@ -10,21 +10,23 @@ import sliderInit from "./slider.js";
 // inisialisasi data burger
 export const burgersData = [];
 
-const { burgers } = await fetch("static/burgers.json").then((res) =>
-  res.json()
-);
-burgersData.push(...burgers);
+(async () => {
+  const { burgers } = await fetch("static/burgers.json").then((res) =>
+    res.json()
+  );
 
-navbarInit();
-sliderInit();
-profileInit();
-loadMenu();
-orderInit();
+  burgersData.push(...burgers);
+  navbarInit();
+  sliderInit();
+  profileInit();
+  loadMenu();
+  orderInit();
 
-window.addEventListener("scroll", () => {
-  backToTopchecker();
-  parallaxChecker();
-});
+  window.addEventListener("scroll", () => {
+    backToTopchecker();
+    parallaxChecker();
+  });
 
-// sembunyikan loading screen jika semua sudah di load
-hideLoadingScreen();
+  // sembunyikan loading screen jika semua sudah di load
+  hideLoadingScreen();
+})();

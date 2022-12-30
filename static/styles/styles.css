@@ -55,12 +55,8 @@
   cursor: pointer;
 }
 
-.btn-show-profile {
-  transition: rotate 500ms var(--ini-baru-keren);
-}
-
 .btn-show-profile-open {
-  rotate: 180deg;
+  transform: rotate(180deg) translate(0, -50%) !important;
 }
 
 .btn-submit {
@@ -117,7 +113,7 @@
   font-size: x-large;
   border-radius: 50%;
   transition: background-color 300ms var(--ini-baru-keren),
-    translate 300ms var(--ini-baru-keren);
+    transform 300ms var(--ini-baru-keren);
 }
 
 .btn-to-top a {
@@ -134,7 +130,7 @@
 }
 
 .btn-to-top-off {
-  translate: 200% 0;
+  transform: translate(200%, 0);
 }
 
 .btn-cancel {
@@ -175,7 +171,7 @@
 
 @keyframes spinning-burger {
   100% {
-    rotate: 360deg;
+    transform: rotate(360deg);
   }
 }
 
@@ -562,12 +558,6 @@
   text-align: start;
 }
 
-/* .orders-label {
-  color: var(--color-secondary);
-  font-size: xx-large;
-  font-weight: 700;
-} */
-
 .orders-list {
   position: relative;
   margin-top: 0.5rem;
@@ -595,7 +585,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  translate: -50% -50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -741,8 +731,8 @@
   color: var(--color-secondary);
   top: 50%;
   padding: 1.8rem;
-  translate: -95% -50%;
-  transition: translate 500ms var(--ini-baru-keren);
+  transform: translate(-95%, -50%);
+  transition: transform 500ms var(--ini-baru-keren);
 }
 
 .profile img {
@@ -762,7 +752,7 @@
 }
 
 .profile-showing {
-  translate: 0% -50%;
+  transform: translate(0%, -50%);
 }
 
 .profile-detail {
@@ -788,7 +778,7 @@
   height: 2.5rem;
   font-size: large;
   top: 50%;
-  translate: 0 -50%;
+  transform: translate(0, -50%);
 }
 
 /* END OF PROFILE CODE */
