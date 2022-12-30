@@ -55,10 +55,6 @@
   cursor: pointer;
 }
 
-.btn-show-profile-open {
-  transform: rotate(180deg) translate(0, -50%) !important;
-}
-
 .btn-submit {
   background-color: var(--highlight-yellow);
   border-color: var(--highlight-yellow);
@@ -237,7 +233,8 @@
 .jumbotron-wrapper {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
     url("../images/jumbotron.jpg");
-  background-size: 100%;
+  background-size: cover;
+
   position: relative;
 }
 
@@ -479,6 +476,7 @@
   display: flex;
   overflow: hidden;
   scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
   gap: 1rem;
   margin-top: 2rem;
 }
@@ -486,6 +484,7 @@
 .menu-card {
   box-shadow: 1px 1px 8px 3px var(--color-darker);
   display: flex;
+  scroll-snap-align: center;
   flex-direction: column;
   justify-content: flex-end;
   text-align: start;
@@ -591,14 +590,14 @@
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0px 0px 8px 0px var(--color-darker-half);
   background-color: var(--color-dark);
 }
 
 .orders-empty-title {
-  font-size: x-large;
+  font-size: large;
   font-weight: 700;
   color: var(--color-secondary);
 }
@@ -794,11 +793,6 @@
   .jumbotron-welcome {
     width: 100%;
     text-align: center;
-  }
-
-  .jumbotron-wrapper {
-    background-size: cover;
-    background-position: right;
   }
 
   .jumbotron-content {
